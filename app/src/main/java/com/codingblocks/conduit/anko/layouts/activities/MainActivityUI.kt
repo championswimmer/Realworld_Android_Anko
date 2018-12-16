@@ -23,6 +23,7 @@ class MainActivityUI: AnkoComponent<Context> {
             navigationView {
                 fitsSystemWindows = true
                 addHeaderView(importView(NavDrawerHeaderUI()))
+                inflateMenu(R.menu.main_menu_loggedout)
             }.lparams(wrapContent, matchParent, Gravity.START)
         }
     }
