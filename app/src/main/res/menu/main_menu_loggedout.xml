@@ -8,10 +8,10 @@
 
     <group android:id="@+id/menu_group_auth">
         <item
-            android:id="@+id/signin"
+            android:id="@+id/menu_signin"
             android:title="Sign in" />
         <item
-            android:id="@+id/signup"
+            android:id="@+id/menu_signup"
             android:title="Sign up" />
     </group>
 
