@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
 import androidx.core.view.GravityCompat
+import androidx.core.view.forEach
 import androidx.core.view.iterator
 import com.codingblocks.conduit.anko.fragments.HomeFragment
 import com.codingblocks.conduit.anko.fragments.SigninFragment
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             .beginTransaction()
             .replace(ui.container.id, fragment)
             .commit()
+        ui.nav.menu.forEach { it.isChecked = false }
         item.isChecked = true
         ui.drawer.closeDrawer(GravityCompat.START)
         return true
